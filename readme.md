@@ -19,6 +19,13 @@ It is possible to drop more than one table at a time. To do that, list the names
 
 	DROP TABLE User_Details, Job_List;
 
+
+###Spatially Enable Database
+
+	CREATE EXTENSION postgis;	
+
+From [Spatially enabled Postgres database](http://gis.stackexchange.com/questions/29759/spatially-enabled-postgres-database)
+
 #CartoDB
 ###Download CSV of data table
 
