@@ -26,6 +26,12 @@ It is possible to drop more than one table at a time. To do that, list the names
 
 From [Spatially enabled Postgres database](http://gis.stackexchange.com/questions/29759/spatially-enabled-postgres-database)
 
+###Select by Date Time Range
+[Specific Time Range Query in SQL Server](http://stackoverflow.com/questions/885188/specific-time-range-query-in-sql-server)
+
+	SELECT * FROM MyTable WHERE datecolumn > '3/1/2009' AND datecolumn <= '3/31/2009'
+
+
 #CartoDB
 ###Download CSV of data table
 
