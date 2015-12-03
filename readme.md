@@ -26,6 +26,37 @@ It is possible to drop more than one table at a time. To do that, list the names
 
 From [Spatially enabled Postgres database](http://gis.stackexchange.com/questions/29759/spatially-enabled-postgres-database)
 
+##Merge Multiple Tables
+
+[Merge Multiple Tables StackExchange](http://gis.stackexchange.com/questions/27402/merge-multiple-tables-into-a-new-table-in-postgis)
+
+(Pre-flight-check: are attributes identical in all original tables? Is the geometry type exactly the same in all tables?)
+
+You can either
+
+create the (empty) table first, then use INSERT INTO...SELECT... FROM to get all the data from each of the original tables into the merged one.
+Create the new table from one big UNION statement.
+
+For 1 it might go:
+
+	CREATE TABLE merged (id serial primary key, attrib1 integer, attrib2 varchar(15),....);
+	SELECT AddGeometryColumn('merged','geom',<SRID>,'<FEATURE_TYPE>,'XY');
+	INSERT INTO merged (attrib1, attrib2, ...., geom) SELECT attribA, attribB,...,geom FROM table_1;
+	INSERT INTO merged (attrib1, attrib2, ...., geom) SELECT attribA, attribB,...,geom FROM table_2;
+
+and so on...
+
+For option 2:
+
+	CREATE TABLE merged AS( 
+	SELECT attribA, attribB,...,geom FROM table_1
+	UNION 
+	SELECT attribA, attribB,...,geom FROM table_2
+	UNION
+	.... 
+	);
+	SELECT Populate_Geometry_Columns('merged'::regclass);
+
 #CartoDB
 ###Download CSV of data table
 
