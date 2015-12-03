@@ -26,6 +26,7 @@ It is possible to drop more than one table at a time. To do that, list the names
 
 From [Spatially enabled Postgres database](http://gis.stackexchange.com/questions/29759/spatially-enabled-postgres-database)
 
+<<<<<<< HEAD
 ##Merge Multiple Tables
 
 [Merge Multiple Tables StackExchange](http://gis.stackexchange.com/questions/27402/merge-multiple-tables-into-a-new-table-in-postgis)
@@ -56,6 +57,13 @@ For option 2:
 	.... 
 	);
 	SELECT Populate_Geometry_Columns('merged'::regclass);
+=======
+###Select by Date Time Range
+[Specific Time Range Query in SQL Server](http://stackoverflow.com/questions/885188/specific-time-range-query-in-sql-server)
+
+	SELECT * FROM MyTable WHERE datecolumn > '3/1/2009' AND datecolumn <= '3/31/2009'
+
+>>>>>>> origin/master
 
 #CartoDB
 ###Download CSV of data table
