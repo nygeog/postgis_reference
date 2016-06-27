@@ -81,6 +81,23 @@ You can get a correct set of lines from this collection of points with just this
 	FROM gps_poinst
 	GROUP BY gps_track_id
 
+### Making Points from Lines
+
+#### Split at pre-determined distance
+[Create a point on a line after a specific distance from startpoint](http://gis.stackexchange.com/questions/122373/create-a-point-on-a-line-after-a-specific-distance-from-startpoint)
+
+Your friend here is ST_LineInterpolatePoint. Look here for more information: http://postgis.net/docs/ST_Line_Interpolate_Point.html.
+
+You have to compute the right fraction to get your 10 metres. So this is done with this little calculcation:
+
+	10 metres = ST_Length(the_line) * fraction 
+	fraction = 10 metres / ST_Length(the_line)
+So the result is (like the other posts described):
+
+	ST_LineInterpolatePoint(the_geom, 10 / ST_Length(the_line))
+Watch out the coordinate system you use so the 10 is 10 metres indeed.
+
+
 #CartoDB
 ### Download CSV of data table
 
