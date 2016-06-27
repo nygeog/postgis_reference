@@ -97,6 +97,9 @@ So the result is (like the other posts described):
 	ST_LineInterpolatePoint(the_geom, 10 / ST_Length(the_line))
 Watch out the coordinate system you use so the 10 is 10 metres indeed.
 
+IMPORT/EXPORT GEODATA BETWEEN SPATIALITE (SQLITE), POSTGIS, SHAPEFILE,…
+http://isticktoit.net/?p=740
+
 
 #CartoDB
 ### Download CSV of data table
