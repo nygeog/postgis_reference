@@ -109,7 +109,9 @@ http://isticktoit.net/?p=740
 	    Download CSV
 	</a>
 	
-	
+### Get column names
+
+	http://sheehan-carto.cartodb.com/api/v2/sql?q=SELECT column_name FROM information_schema.columns WHERE table_name ='<TABLE_NAME>'; &api_key=API_KEY	
 
 	
 	
