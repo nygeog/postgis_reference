@@ -113,5 +113,32 @@ http://isticktoit.net/?p=740
 
 	http://sheehan-carto.cartodb.com/api/v2/sql?q=SELECT column_name FROM information_schema.columns WHERE table_name ='<TABLE_NAME>'; &api_key=API_KEY	
 
+### Column names to SQL query
+
+	
+	from cartodb import CartoDBAPIKey, CartoDBException, FileImport
+	
+	
+	urlCols = "http://"+cartodb_domain+".cartodb.com/api/v2/sql?q=SELECT%20column_name%20FROM%20information_schema.columns%20WHERE%20table_name%20='"+tablename+"';%20&format=json&api_key="+API_KEY
+	req = urllib2.Request(urlCols)
+	response = urllib2.urlopen(req)
+	cols_data = json.loads(str(response.read()))
+	
+	colsList = []
+	for i in cols_data['rows']:
+		colsList.append(i['column_name'])
+	
+	colsSQL = ',%20'.join(colsList) +',%20ST_X(the_geom),%20ST_Y(the_geom)'
+	
+	print colsSQL
+	url = "http://"+cartodb_domain+".cartodb.com/api/v2/sql?q=SELECT%20"+colsSQL+"%20FROM%20"+tablename+"&format=csv&api_key="+API_KEY
+	print url
+	df = pd.read_csv(url)
+	
+	ouCSV = wp+'users_jitter.csv'
+	#ouCSV = 'users.csv'
+	
+
+	df.to_csv(ouCSV, index=False)
 	
 	
