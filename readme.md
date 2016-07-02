@@ -132,4 +132,8 @@ http://isticktoit.net/?p=740
 	col_List = getCartoTableColsList('users',cartodb_domain,API_KEY)
 	
 	
-		
+### Cartodbfy for team
+
+	cdb_cartodbfytable(‘your-account-name’, ‘your-table-name’);
+
+
