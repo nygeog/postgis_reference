@@ -137,3 +137,9 @@ http://isticktoit.net/?p=740
 	cdb_cartodbfytable(‘your-account-name’, ‘your-table-name’);
 
 
+
+https://github.com/CartoDB/cdb-manager
+ 
+https://www.postgresql.org/docs/9.5/static/plpgsql.html
+
+https://www.postgresql.org/docs/9.5/static/plpython.html
