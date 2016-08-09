@@ -6,6 +6,10 @@ From [StackExchange](http://gis.stackexchange.com/questions/94066/get-list-of-al
 	SELECT * FROM CDB_UserTables()
 	
 	
+### Time add time to cols
+
+https://www.postgresql.org/docs/8.0/static/functions-datetime.html
+	
 ### Drop tables
 [SQL Drop Table](http://www.1keydata.com/sql/sqldrop.html)
 	
