@@ -1,0 +1,1 @@
+https://cartocdn_{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
