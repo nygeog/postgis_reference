@@ -30,6 +30,13 @@ It is possible to drop more than one table at a time. To do that, list the names
 
 From [Spatially enabled Postgres database](http://gis.stackexchange.com/questions/29759/spatially-enabled-postgres-database)
 
+## Drop Multiple Columns
+http://www.w3schools.com/sql/sql_alter.asp
+http://stackoverflow.com/questions/6346120/how-do-i-drop-multiple-columns-with-a-single-alter-table-statement
+
+	ALTER TABLE table_name DROP COLUMN column_name1, DROP COLUMN column_name2;
+
+
 
 ## Merge Multiple Tables
 
