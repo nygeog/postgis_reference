@@ -154,6 +154,25 @@ http://isticktoit.net/?p=740
 	
 	SELECT cdb_cartodbfytable('sheehan-carto','ny_state_geom')
 
+
+Get all Tracts
+
+	CREATE TABLE us_census_tracts As
+	SELECT the_geom, geoid
+	FROM OBS_GetBoundariesByGeometry(
+	   		ST_Buffer(CDB_LatLng(40.7, -73.9), 180), 'us.census.tiger.census_tract_clipped') As m(the_geom, geoid)
+	
+	SELECT cdb_cartodbfytable('sheehan-carto','us_census_tracts')
+
+Get all States
+
+	CREATE TABLE us_states As
+	SELECT the_geom, geoid
+	FROM OBS_GetBoundariesByGeometry(
+	   		ST_Buffer(CDB_LatLng(40.7, -73.9), 180), 'us.census.tiger.state_clipped') As m(the_geom, geoid)
+	
+	SELECT cdb_cartodbfytable('sheehan-carto','us_states')
+
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
 
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
