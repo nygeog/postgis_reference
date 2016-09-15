@@ -148,6 +148,17 @@ http://isticktoit.net/?p=740
 	cdb_cartodbfytable(‘your-account-name’, ‘your-table-name’);
 
 
+### Data Observatory
+
+	CREATE TABLE ny_state_geom AS SELECT ST_Transform(OBS_GetBoundaryById('36', 'us.census.tiger.state_clipped'), 3857) As the_geom_webmercator
+	
+	SELECT cdb_cartodbfytable('sheehan-carto','ny_state_geom')
+
+http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
+
+http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
+
+
 
 https://github.com/CartoDB/cdb-manager
  
