@@ -173,6 +173,9 @@ Get all States
 	
 	SELECT cdb_cartodbfytable('sheehan-carto','us_states')
 
+
+### Add thousands Seperator, comma
+
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
 
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
