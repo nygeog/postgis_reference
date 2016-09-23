@@ -176,6 +176,14 @@ Get all States
 
 ### Add thousands Seperator, comma
 
+	ALTER TABLE table_250k_export_2_redbrick_1 ADD COLUMN total_available_space_sf_thousandssep TEXT
+
+	UPDATE table_250k_export_2_redbrick_1 SET total_available_space_sf_thousandssep = to_char(total_available_space_sf, '9,999,999')
+
+
+
+Other stuff: https://github.com/clhenrick/cartodb-tutorial/blob/master/sql/other-useful-queries.sql
+
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
 
 http://cartodb.github.io/bigmetadata/tags.global/tags.boundary.html#countries
