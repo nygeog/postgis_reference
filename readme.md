@@ -143,6 +143,12 @@ http://isticktoit.net/?p=740
 	col_List = getCartoTableColsList('users',cartodb_domain,API_KEY)
 	
 	
+### Get data as a csv
+
+	https://ashleysimcox.carto.com/api/v2/sql?q=SELECT count(*) FROM ny_boroughs
+
+	https://ashleysimcox.carto.com/api/v2/sql?q=SELECT * FROM ny_boroughs
+
 ### Cartodbfy for team
 
 	cdb_cartodbfytable(‘your-account-name’, ‘your-table-name’);
