@@ -201,3 +201,24 @@ https://github.com/CartoDB/cdb-manager
 https://www.postgresql.org/docs/9.5/static/plpgsql.html
 
 https://www.postgresql.org/docs/9.5/static/plpython.html
+
+
+###Name Maps as XYZ
+
+	http://nygeog.carto.com/api/v1/map/named/tpl_b6c8b9be_8fe5_11e6_8a5c_0e05a8b3e3d7/all/{z}/{x}/{y}.png
+
+	http://nygeog.carto.com/api/v1/map/named/tpl_b6c8b9be_8fe5_11e6_8a5c_0e05a8b3e3d7/all/1/1/1.png
+	
+	
+###Static Maps API
+
+username: nygeog
+
+named: tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f
+^ which is id, w/ tpl_ and dashes (-) as underscores
+
+[http://staticmapmaker.com/cartodb/](http://staticmapmaker.com/cartodb/)
+
+<img width="600" src="https://cartocdn-ashbu.global.ssl.fastly.net/nygeog/api/v1/map/static/named/tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f/600/300.png" alt="CartoDB Map of 42.6564,-74.7638">
+
+[https://cartocdn-ashbu.global.ssl.fastly.net/nygeog/api/v1/map/static/named/tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f/600/300.png](https://cartocdn-ashbu.global.ssl.fastly.net/nygeog/api/v1/map/static/named/tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f/600/300.png)
