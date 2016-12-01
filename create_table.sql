@@ -1,0 +1,1 @@
+CREATE TABLE table_name (id serial primary key, attrib1 integer, attrib2 varchar(15),....);
