@@ -1,0 +1,1 @@
+DROP TABLE table_name_1, table_name_2;
