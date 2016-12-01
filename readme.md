@@ -111,6 +111,9 @@ Watch out the coordinate system you use so the 10 is 10 metres indeed.
 IMPORT/EXPORT GEODATA BETWEEN SPATIALITE (SQLITE), POSTGIS, SHAPEFILE,…
 http://isticktoit.net/?p=740
 
+#### Number of records in a table:
+
+	SELECT COUNT(*) FROM table_name;
 
 #CartoDB
 ### Download CSV of data table
@@ -151,7 +154,7 @@ http://isticktoit.net/?p=740
 
 ### Cartodbfy for team
 
-	cdb_cartodbfytable(‘your-account-name’, ‘your-table-name’);
+	cdb_cartodbfytable('your-account-name', 'your-table-name');
 
 
 ### Data Observatory
@@ -203,7 +206,7 @@ https://www.postgresql.org/docs/9.5/static/plpgsql.html
 https://www.postgresql.org/docs/9.5/static/plpython.html
 
 
-###Name Maps as XYZ
+### Name Maps as XYZ
 
 	http://nygeog.carto.com/api/v1/map/named/tpl_b6c8b9be_8fe5_11e6_8a5c_0e05a8b3e3d7/all/{z}/{x}/{y}.png
 
@@ -230,3 +233,18 @@ named: tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f
 	https://cartodb.com/assets/favicon.ico
 	
 	https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js
+	
+### Import API
+[https://github.com/nyctreescountdatajam/nyctreescountdatajam_code/blob/master/02-import-to-cartodb.py](https://github.com/nyctreescountdatajam/nyctreescountdatajam_code/blob/master/02-import-to-cartodb.py)
+	
+	
+## Geocoding	
+	
+### Report Mapzen Geocoding Issues
+
+[https://github.com/pelias/pelias/issues/new](https://github.com/pelias/pelias/issues/new)	
+
+
+## Routing
+
+Routing params [https://carto.com/docs/carto-engine/dataservices-api/routing-functions/#arguments-1](https://carto.com/docs/carto-engine/dataservices-api/routing-functions/#arguments-1)
