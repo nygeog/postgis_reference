@@ -1,5 +1,14 @@
 # PostGIS/CartoDB reference
 
+### PostGIS Reference
+
+[http://postgis.net/docs/reference.html](http://postgis.net/docs/reference.html)
+
+### SQL Reference
+
+[http://www.w3schools.com/sql/default.asp](http://www.w3schools.com/sql/default.asp)
+
+
 ### List all tables in CartoDB acccount
 From [StackExchange](http://gis.stackexchange.com/questions/94066/get-list-of-all-tables-in-cartodb-account-with-sql-statement)
 
