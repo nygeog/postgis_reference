@@ -282,3 +282,9 @@ Routing params [https://carto.com/docs/carto-engine/dataservices-api/routing-fun
 here you have an example of a call with the CARTO connector to a Postgres database @dbryson  
 
 	```curl -v -k -H "Content-Type: application/json"     -d '{"connector":{"provider":"postgres","connection":{"server":"46.101.239.37","username":"fdw_test","database":"fdw_tests"},"schema": "fdw_tests","table":"clients"}}'     "https://carto.lan/user/carto/api/v1/imports/?api_key=API_KEY"
+
+
+## Torque Classify
+
+	ALTER TABLE table_name ADD COLUMN torque_class INTEGER;
+	UPDATE table_name SET torque_class = ROUND(((input_col - (SELECT MIN(input_col) FROM table_name)) / (( (SELECT MAX(input_col) FROM table_name) - (SELECT MIN(input_col) FROM table_name))) * 255))
