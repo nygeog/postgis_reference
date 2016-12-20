@@ -224,6 +224,8 @@ https://www.postgresql.org/docs/9.5/static/plpython.html
 	
 ### Static Maps API
 
+Carto Docs [https://carto.com/docs/carto-engine/maps-api/static-maps-api](https://carto.com/docs/carto-engine/maps-api/static-maps-api)
+
 username: nygeog
 
 named: tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f
@@ -263,3 +265,20 @@ Routing params [https://carto.com/docs/carto-engine/dataservices-api/routing-fun
 ## Basemaps
 
 	https://cartocdn_{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
+	
+	
+## CartoCSS
+
+[https://tilemill-project.github.io/tilemill/docs/guides/styling-polygons/](https://tilemill-project.github.io/tilemill/docs/guides/styling-polygons/)
+
+
+## Get Geocoding, Isolines Quota
+
+	select * from cdb_dataservices_client.cdb_service_quota_info()
+
+
+## Connector Call
+
+here you have an example of a call with the CARTO connector to a Postgres database @dbryson  
+
+	```curl -v -k -H "Content-Type: application/json"     -d '{"connector":{"provider":"postgres","connection":{"server":"46.101.239.37","username":"fdw_test","database":"fdw_tests"},"schema": "fdw_tests","table":"clients"}}'     "https://carto.lan/user/carto/api/v1/imports/?api_key=API_KEY"
