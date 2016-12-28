@@ -1,0 +1,36 @@
+df['col'] = ((((df['col']-df['col'].min()) / (df['col'].max() - df['col'].min()))*255).round()).astype(int)
+
+
+********ANSWER IS RIGHT HERE***********
+ALTER TABLE table_name ADD COLUMN torque_class INTEGER;
+UPDATE table_name SET torque_class = ROUND(((input_col - (SELECT MIN(input_col) FROM table_name)) / (( (SELECT MAX(input_col) FROM table_name) - (SELECT MIN(input_col) FROM table_name))) * 255))
+***************************************
+
+
+
+ALTER TABLE untitled_table_27 ADD COLUMN torque_class_CHECK INTEGER;
+UPDATE untitled_table_27 SET torque_class_CHECK = ROUND(((description - (SELECT MIN(description) FROM untitled_table_27)) / (( (SELECT MAX(description) FROM untitled_table_27) - (SELECT MIN(description) FROM untitled_table_27))) * 255))
+
+
+ALTER TABLE untitled_table_27 ADD COLUMN torque_class INTEGER;
+ALTER TABLE untitled_table_27 ADD COLUMN torque_class_min INTEGER;
+ALTER TABLE untitled_table_27 ADD COLUMN torque_class_max INTEGER
+
+UPDATE untitled_table_27 SET torque_class_min  = (SELECT MIN(description) FROM untitled_table_27)
+UPDATE untitled_table_27 SET torque_class_max  = (SELECT MAX(description) FROM untitled_table_27)
+UPDATE untitled_table_27 SET torque_class = ROUND(((description - torque_class_min) / (( torque_class_max - torque_class_min)) * 255))
+
+
+UPDATE untitled_table_27 SET torque_class = ROUND(((description - (SELECT MIN(description) FROM untitled_table_27)) / (( (SELECT MAX(description) FROM untitled_table_27) - (SELECT MIN(description) FROM untitled_table_27))) * 255))
+
+UPDATE table_name SET torque_class = ROUND(((input_col - (SELECT MIN(input_col) FROM table_name)) / (( (SELECT MAX(input_col) FROM table_name) - (SELECT MIN(input_col) FROM table_name))) * 255))
+
+
+
+
+
+(description - theMin) / (() theMax - theMin )*255) where (SELECT MIN(description), MAX(description) AS theMin, theMax FROM untitled_table_27)
+
+
+SELECT cdb_cartodbfytable('tablename')
+SELECT cdb_cartodbfytable('untitled_table_27')

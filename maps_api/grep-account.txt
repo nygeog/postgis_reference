@@ -1,0 +1,34 @@
+Last login: Thu Dec  8 11:47:38 on ttys000
+MacBook-Pro-5:~ danielmsheehan$ curl 'https://nygeog.carto.com/maps' | grep '/viz/'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 25791    0 25791    0     0  22186      0 --:--:--  0:00:01 --:--:-- 22195
+    <a href="https://nygeog.carto.com/viz/ad1b376b-7343-4e53-bd48-2ee48e32b8f9/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/ad1b376b-7343-4e53-bd48-2ee48e32b8f9/public_map" class="DefaultTitle-link u-ellipsLongText" title="Spotify Musical Cities">Spotify Musical Cities</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/ad1b376b-7343-4e53-bd48-2ee48e32b8f9/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/e92dab12-b5b0-11e6-9c1a-0e233c30368f/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/e92dab12-b5b0-11e6-9c1a-0e233c30368f/public_map" class="DefaultTitle-link u-ellipsLongText" title="Alaska360Test1">Alaska360Test1</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/e92dab12-b5b0-11e6-9c1a-0e233c30368f/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/e776e49f-2000-4a8c-9b65-172e3a55e93c/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/e776e49f-2000-4a8c-9b65-172e3a55e93c/public_map" class="DefaultTitle-link u-ellipsLongText" title="image360test Import">image360test Import</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/e776e49f-2000-4a8c-9b65-172e3a55e93c/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/de56f0b2-a9f9-464a-a168-d8ba40478eb2/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/de56f0b2-a9f9-464a-a168-d8ba40478eb2/public_map" class="DefaultTitle-link u-ellipsLongText" title="Treaty Body Map">Treaty Body Map</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/de56f0b2-a9f9-464a-a168-d8ba40478eb2/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/7f323f78-9fa5-11e6-a15d-0e3a376473ab/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/7f323f78-9fa5-11e6-a15d-0e3a376473ab/public_map" class="DefaultTitle-link u-ellipsLongText" title="Untitled Map">Untitled Map</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/7f323f78-9fa5-11e6-a15d-0e3a376473ab/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/32795c7f-cba4-45b9-84dc-62ac01c16062/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/32795c7f-cba4-45b9-84dc-62ac01c16062/public_map" class="DefaultTitle-link u-ellipsLongText" title="Untitled Map Import Import">Untitled Map Import Import</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/32795c7f-cba4-45b9-84dc-62ac01c16062/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/09868b88-9b9c-11e6-9960-0ef7f98ade21/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/09868b88-9b9c-11e6-9960-0ef7f98ade21/public_map" class="DefaultTitle-link u-ellipsLongText" title="Untitled Map">Untitled Map</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/09868b88-9b9c-11e6-9960-0ef7f98ade21/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/93b1c47e-ef9c-4924-a0bb-7b61e54fe13c/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/93b1c47e-ef9c-4924-a0bb-7b61e54fe13c/public_map" class="DefaultTitle-link u-ellipsLongText" title="Sales Territory Analysis (Portland)">Sales Territory Analysis (Portland)</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/93b1c47e-ef9c-4924-a0bb-7b61e54fe13c/like" class="js-likes"
+    <a href="https://nygeog.carto.com/viz/1abc179f-3797-4239-be47-90069e56806b/public_map" class="MapCard-header js-header">
+            <a href="https://nygeog.carto.com/viz/1abc179f-3797-4239-be47-90069e56806b/public_map" class="DefaultTitle-link u-ellipsLongText" title="Untitled Map Import">Untitled Map Import</a>
+        <a href="https://nygeog.carto.com/api/v1/viz/1abc179f-3797-4239-be47-90069e56806b/like" class="js-likes"
+            url: '//nygeog.carto.com/api/v2/viz/ad1b376b-7343-4e53-bd48-2ee48e32b8f9/viz.json',
+MacBook-Pro-5:~ danielmsheehan$ curl 'https://nygeog.carto.com/maps' | grep '/viz/'MacBook-Pro-5:~ danielmsheehan$ curl 'https://nygeog.carto.com/maps' | grep '/viz/' 

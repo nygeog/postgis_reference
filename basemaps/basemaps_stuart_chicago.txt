@@ -1,0 +1,15 @@
+https://cartocdn_{1}.global.ssl.fastly.net/dark_all/10/10/10.png
+
+
+https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/10/260/380.png.png
+https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png',
+
+http://cartobase-{s}.global.ssl.fastly.net/light_all/10/260/380@2x.png
+
+
+http://a.basemaps.cartocdn.com/light_nolabels/10/260/380.png
+https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png
+
+
+http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png'
