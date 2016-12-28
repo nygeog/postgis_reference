@@ -163,7 +163,7 @@ http://isticktoit.net/?p=740
 
 ### Cartodbfy for team
 
-	cdb_cartodbfytable('your-account-name', 'your-table-name');
+	SELECT cdb_cartodbfytable('your-account-name', 'your-table-name');
 
 
 ### Data Observatory
@@ -191,6 +191,11 @@ Get all States
 	
 	SELECT cdb_cartodbfytable('sheehan-carto','us_states')
 
+
+### Dissolve
+
+	select  value_shared, st_union(the_geom_webmercator) as the_geom_webmercator from distribution_center_copy group by distribution_center_copy.value_shared
+	
 
 ### Add thousands Seperator, comma
 
@@ -288,3 +293,15 @@ here you have an example of a call with the CARTO connector to a Postgres databa
 
 	ALTER TABLE table_name ADD COLUMN torque_class INTEGER;
 	UPDATE table_name SET torque_class = ROUND(((input_col - (SELECT MIN(input_col) FROM table_name)) / (( (SELECT MAX(input_col) FROM table_name) - (SELECT MIN(input_col) FROM table_name))) * 255))
+	
+## Table Metadata	
+	
+	Schema changes don't invalidate cached results. I cannot find the issue associated with this problem, but this is a known issue.
+
+The current workaround is to select cartodb.cdb_tablemetadatatouch('user_name.table_name'); after you have changed the schema.
+
+BTW, it should work OK if you delete the column through the UI.
+
+## Clear an Analysis Cache
+
+	select CDB_TableMetadataTouch('tablename'::regclass)
