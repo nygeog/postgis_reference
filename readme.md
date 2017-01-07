@@ -154,6 +154,9 @@ http://isticktoit.net/?p=740
 	
 	col_List = getCartoTableColsList('users',cartodb_domain,API_KEY)
 	
+### Get list of public tables
+
+	https://andye.carto.com/api/v2/sql?q=SELECT * FROM CDB_UserTables()
 	
 ### Get data as a csv
 
@@ -305,3 +308,10 @@ BTW, it should work OK if you delete the column through the UI.
 ## Clear an Analysis Cache
 
 	select CDB_TableMetadataTouch('tablename'::regclass)
+	
+	
+## Here 
+
+HERE uses realtime traffic information. 
+[https://carto.com/docs/carto-engine/dataservices-api/isoline-functions](https://carto.com/docs/carto-engine/dataservices-api/isoline-functions)
+	
