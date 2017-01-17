@@ -315,6 +315,6 @@ BTW, it should work OK if you delete the column through the UI.
 HERE uses realtime traffic information. 
 [https://carto.com/docs/carto-engine/dataservices-api/isoline-functions](https://carto.com/docs/carto-engine/dataservices-api/isoline-functions)
 
-Here coverage:
+Here Geocoding coverage:
 [https://developer.here.com/rest-apis/documentation/geocoder/topics/coverage-geocoder.html](https://developer.here.com/rest-apis/documentation/geocoder/topics/coverage-geocoder.html)
 	
