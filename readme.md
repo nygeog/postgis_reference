@@ -318,10 +318,16 @@ HERE uses realtime traffic information.
 Here Geocoding coverage:
 [https://developer.here.com/rest-apis/documentation/geocoder/topics/coverage-geocoder.html](https://developer.here.com/rest-apis/documentation/geocoder/topics/coverage-geocoder.html)
 	
-# Rotating a Map
+## Rotating a Map
 Specific for NYC
 
 	SELECT 
 	the_geom,cartodb_id, 
 	st_rotate(the_geom_webmercator,0.50459214, st_transform(cdb_latlng(40.658439, -73.963394),3857)) the_geom_webmercator
 	FROM ny_nj 
+
+
+## Update all rows
+
+	UPDATE nyctsubwayroutes_20170119_2nd_ave_q
+	SET secondave = '0'
