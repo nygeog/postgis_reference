@@ -124,6 +124,10 @@ http://isticktoit.net/?p=740
 
 	SELECT COUNT(*) FROM table_name;
 
+#### Sort Datetime to get 100 most recent
+
+	SELECT * FROM table ORDER BY datetime DESC LIMIT 100
+
 #CartoDB
 ### Download CSV of data table
 
