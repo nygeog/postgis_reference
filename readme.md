@@ -331,3 +331,9 @@ Specific for NYC
 
 	UPDATE nyctsubwayroutes_20170119_2nd_ave_q
 	SET secondave = '0'
+
+
+## TurboCarto
+
+* Set style ranges
+	polygon-fill: ramp([pct_dem],(#9CC0E3 ,#6193C7 ,#006AAB ),(0.5,0.6,0.8),"<");
