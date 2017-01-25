@@ -336,4 +336,5 @@ Specific for NYC
 ## TurboCarto
 
 * Set style ranges
+	
 	polygon-fill: ramp([pct_dem],(#9CC0E3 ,#6193C7 ,#006AAB ),(0.5,0.6,0.8),"<");
