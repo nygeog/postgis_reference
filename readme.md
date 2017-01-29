@@ -249,6 +249,13 @@ named: tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f
 
 [https://cartocdn-ashbu.global.ssl.fastly.net/nygeog/api/v1/map/static/named/tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f/600/300.png](https://cartocdn-ashbu.global.ssl.fastly.net/nygeog/api/v1/map/static/named/tpl_2034a658_8fe9_11e6_9bbb_0e233c30368f/600/300.png)
 
+### Maps API
+* Create a named map with a base map - without Javascript or browser
+	* http://gis.stackexchange.com/questions/186029/create-a-named-map-with-a-base-map-without-javascript-or-browser
+	
+	
+
+
 ### HTTPS Stuff 
 
 	https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css
