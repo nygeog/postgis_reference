@@ -45,7 +45,11 @@ http://stackoverflow.com/questions/6346120/how-do-i-drop-multiple-columns-with-a
 
 	ALTER TABLE table_name DROP COLUMN column_name1, DROP COLUMN column_name2;
 
+### Add column, Sum column
 
+	ALTER TABLE chicago_census_tracts_2010_vars ADD COLUMN pop_children_0_18 FLOAT
+
+	UPDATE chicago_census_tracts_2010_vars SET pop_children_0_18 = (b01001_003 + b01001_004 + b01001_005 + b01001_006 + b01001_007  + b01001_027  + b01001_028  + b01001_029  + b01001_030  + b01001_031)
 
 ## Merge Multiple Tables
 
