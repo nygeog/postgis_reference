@@ -353,3 +353,11 @@ Specific for NYC
 * Set style ranges
 	
 		polygon-fill: ramp([pct_dem],(#9CC0E3 ,#6193C7 ,#006AAB ),(0.5,0.6,0.8),"<");
+		
+## Flip Coordinates (http://postgis.net/2013/08/18/tip_lon_lat/)
+
+	ALTER TABLE sometable 
+	  ALTER COLUMN geom TYPE geometry(LineString,4326) 
+	  USING 
+	    ST_FlipCoordinates(
+		geom)::geometry(LineString,4326);
