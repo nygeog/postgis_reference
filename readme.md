@@ -361,3 +361,8 @@ Specific for NYC
 	  USING 
 	    ST_FlipCoordinates(
 		geom)::geometry(LineString,4326);
+
+### Calculate PostGIS Distance
+
+	ALTER TABLE line_table ADD COLUMN dist_meters double precision;
+	UPDATE line_table SET dist_meters = st_length(the_geom::geography)
