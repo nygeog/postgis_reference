@@ -366,3 +366,6 @@ Specific for NYC
 
 	ALTER TABLE line_table ADD COLUMN dist_meters double precision;
 	UPDATE line_table SET dist_meters = st_length(the_geom::geography)
+
+### Carto as WMS (Web Mapping Service)
+Proxy: http://sharegis-admin.carto.com/api/v2/wms/demo/#
