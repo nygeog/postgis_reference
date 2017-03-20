@@ -369,3 +369,8 @@ Specific for NYC
 
 ### Carto as WMS (Web Mapping Service)
 Proxy: http://sharegis-admin.carto.com/api/v2/wms/demo/#
+
+
+### Jitter
+Python: https://github.com/nygeog/questions/blob/master/jitter/gaussian.ipynb
+SQL: https://github.com/nygeog/postgis_reference/blob/master/jitter_function/jitter_function2.sql
