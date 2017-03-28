@@ -374,3 +374,8 @@ Proxy: http://sharegis-admin.carto.com/api/v2/wms/demo/#
 ### Jitter
 Python: https://github.com/nygeog/questions/blob/master/jitter/gaussian.ipynb
 SQL: https://github.com/nygeog/postgis_reference/blob/master/jitter_function/jitter_function2.sql
+
+
+### Find user defined functions in PostGIS
+
+	SELECT prosrc FROM pg_proc WHERE proname = 'pluto_reverse_geocode'
