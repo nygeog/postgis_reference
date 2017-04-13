@@ -81,6 +81,10 @@ For option 2:
 	.... 
 	);
 	SELECT Populate_Geometry_Columns('merged'::regclass);
+	
+	ALTER TABLE {new_tablename} DROP COLUMN cartodb_id
+
+	SELECT cdb_cartodbfytable(‘{username}’, ‘{new_tablename}’);
 
 ### Select by Date Time Range
 [Specific Time Range Query in SQL Server](http://stackoverflow.com/questions/885188/specific-time-range-query-in-sql-server)
