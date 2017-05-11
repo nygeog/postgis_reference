@@ -383,3 +383,10 @@ SQL: https://github.com/nygeog/postgis_reference/blob/master/jitter_function/jit
 ### Find user defined functions in PostGIS
 
 	SELECT prosrc FROM pg_proc WHERE proname = 'pluto_reverse_geocode'
+
+
+### [Overviews](https://github.com/CartoDB/cartodb-postgresql/blob/master/doc/CDB_Overviews.md)
+
+Check if overviews made: 
+
+	SELECT CDB_Overviews(CDB_QueryTablesText('SELECT * FROM tmobile'))
