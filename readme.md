@@ -390,3 +390,7 @@ SQL: https://github.com/nygeog/postgis_reference/blob/master/jitter_function/jit
 Check if overviews made: 
 
 	SELECT CDB_Overviews(CDB_QueryTablesText('SELECT * FROM tmobile'))
+
+### ST_MAKELINE for origin/destination pairs
+
+	UPDATE ralphs_visits_by_home_location_carto SET the_geom = ST_MAKELINE(CDB_LatLng(homelat,homelon),CDB_LatLng(storelat,storelon))
