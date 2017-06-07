@@ -394,3 +394,11 @@ Check if overviews made:
 ### ST_MAKELINE for origin/destination pairs
 
 	UPDATE ralphs_visits_by_home_location_carto SET the_geom = ST_MAKELINE(CDB_LatLng(homelat,homelon),CDB_LatLng(storelat,storelon))
+
+
+
+### List of XYZ map services:
+
+https://worldtiles1.waze.com/tiles/{z}/{x}/{y}.png  
+https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
+
