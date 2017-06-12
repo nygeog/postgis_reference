@@ -402,3 +402,6 @@ Check if overviews made:
 https://worldtiles1.waze.com/tiles/{z}/{x}/{y}.png  
 https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 
+
+### Altyrex Connector
+
