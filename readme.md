@@ -410,4 +410,6 @@ https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 ![alteryx_workflow_configuration](img/alteryx_workflow_configuration.png)
 
 
+### Population Density SQL
 
+	SELECT *, totpop/ST_AREA(the_geom::geography)/1000000 AS popdens FROM "sheehan-carto".gct_000b11a_e
