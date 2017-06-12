@@ -405,7 +405,9 @@ https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 
 ### Altyrex Connector
 
-![](img/alteryx_workflow_configuration.png)
-![](img/alteryx_workflow.png)
+![alteryx_workflow](img/alteryx_workflow.png)
+
+![alteryx_workflow_configuration](img/alteryx_workflow_configuration.png)
+
 
 
