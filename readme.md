@@ -413,3 +413,9 @@ https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 ### Population Density SQL
 
 	SELECT *, totpop/ST_AREA(the_geom::geography)/1000000 AS popdens FROM "sheehan-carto".gct_000b11a_e
+
+### Create Month Column
+
+	UPDATE ggla_wc_activememmbers_dates_latlong SET month = EXTRACT(MONTH FROM join_date)
+
+	SELECT EXTRACT(MONTH FROM join_date);
