@@ -419,3 +419,7 @@ https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 	UPDATE ggla_wc_activememmbers_dates_latlong SET month = EXTRACT(MONTH FROM join_date)
 
 	SELECT EXTRACT(MONTH FROM join_date);
+
+### State Plane Projected data to Web Mercator
+
+	UPDATE compass_brownsville SET the_geom = ST_Transform(ST_SetSRID(ST_MakePoint(xcoordinate, ycoordinate), 2263), 4326);
