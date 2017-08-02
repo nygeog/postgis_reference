@@ -291,7 +291,7 @@ Routing params [https://carto.com/docs/carto-engine/dataservices-api/routing-fun
 
 ## Basemaps
 
-	https://cartocdn_{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
+	https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/0/0/0.png
 	
 	
 ## CartoCSS
