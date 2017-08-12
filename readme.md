@@ -423,3 +423,9 @@ https://livemap-tiles2.waze.com/tiles/{z}/{x}/{y}.png
 ### State Plane Projected data to Web Mercator
 
 	UPDATE compass_brownsville SET the_geom = ST_Transform(ST_SetSRID(ST_MakePoint(xcoordinate, ycoordinate), 2263), 4326);
+
+
+### ST Distance
+
+	SELECT ST_Distance(starbucks_manhattan.the_geom, nyc_subway_stations_2017.the_geom), nyc_subway_stations_2017.station, nyc_subway_stations_2017.the_geom as subway_geom, starbucks_manhattan.name, starbucks_manhattan.the_geom as starbucks_geom FROM starbucks_manhattan, nyc_subway_stations_2017
+
